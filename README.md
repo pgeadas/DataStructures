@@ -9,7 +9,7 @@ Solving a problem using BST Trees, AVL trees, Linked Lists, written in C.
 
 #########################################################
 A Caixa dos Números
-########################################################
+#########################################################
 A “Caixa dos Números” é um baú muito especial que armazena números na forma de
 sequências ordenadas. A inserção de números é feita com a operação SAVE(x), na qual x
 é o inteiro que se pretende adicionar (e sendo possível inserir várias vezes o mesmo
@@ -22,17 +22,17 @@ sequência. Para melhor compreender o funcionamento da Caixa dos Números, atent
 ao seguinte exemplo:
 Operação n Conteúdo da Caixa (ordenado) Resposta
 ------------------------------------------------------
-SAVE(-1) 0 -1
-SAVE(1) 0 -1, 1
-LOAD 1 -1, 1 -1
-LOAD 2 -1, 1 1
-SAVE(57) 2 -1, 1, 57
-SAVE(2) 2 -1, 1, 2, 57
-SAVE(8) 2 -1, 1, 2, 8, 57
-LOAD 3 -1, 1, 2, 8, 57 2
-SAVE(456) 3 -1, 1, 2, 8, 57, 456
-LOAD 4 -1, 1, 2, 8, 57, 456 8
-SAVE(2) 4 -1, 1, 2, 2, 8, 57, 456
+SAVE(-1) | 0 | -1 | -
+SAVE(1) | 0 | -1, 1 | -
+LOAD | 1 | -1, 1 -1 | -1
+LOAD | 2 | -1, 1 1 | 1
+SAVE(57) | 2 -1, 1, 57 | -
+SAVE(2) | 2 -1, 1, 2, 57 | -
+SAVE(8) | 2 -1, 1, 2, 8, 57 | -
+LOAD | 3 | -1, 1, 2, 8, 57 2 | 2
+SAVE(456) | 3 -1, 1, 2, 8, 57, 456 | -
+LOAD | 4 | -1, 1, 2, 8, 57, 456 8 | 8
+SAVE(2) | 4 -1, 1, 2, 2, 8, 57, 456 | -
 --------------------------------------------------
 Cada elemento inserido na lista está compreendido no intervalo -2 x 109 ≤ x ≤ 2 x 109.
 5/6
