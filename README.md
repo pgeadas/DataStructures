@@ -22,7 +22,7 @@ sequência. Para melhor compreender o funcionamento da Caixa dos Números, atent
 ao seguinte exemplo:
 #####################################################
 ------------------------------------------------------
-Operação n Conteúdo da Caixa (ordenado) Resposta
+Operação | n | Box Content (sorted) | Answer
 ------------------------------------------------------
 SAVE(-1) | 0 | -1 | - 
 ------------------------------------------------------
