@@ -1,6 +1,6 @@
 ################## DataStructures
 
-Solving a problem using BST Trees, AVL trees, Linked Lists, written in C.
+Solving a problem using Binary Search Trees (BST), AVL Trees, Linked Lists, written in C.
 
 
 
