@@ -1,15 +1,9 @@
-################## DataStructures
+## DataStructures
 
 Solving a problem using Binary Search Trees (BST), AVL Trees, Linked Lists, written in C.
 
+### A Caixa dos Números
 
-
-
-
-
-#########################################################
-A Caixa dos Números
-#########################################################
 A “Caixa dos Números” é um baú muito especial que armazena números na forma de
 sequências ordenadas. A inserção de números é feita com a operação SAVE(x), na qual x
 é o inteiro que se pretende adicionar (e sendo possível inserir várias vezes o mesmo
@@ -20,7 +14,7 @@ elemento da sequência ordenada, a segunda vez é indicado o valor do segundo
 elemento da sequência, e a enésima vez indica o valor do enésimo elemento da
 sequência. Para melhor compreender o funcionamento da Caixa dos Números, atente-se
 ao seguinte exemplo:
-#####################################################
+
 ------------------------------------------------------
 Operation | n | Box Content (sorted) | Answer
 ------------------------------------------------------
@@ -46,37 +40,25 @@ LOAD | 4 | -1, 1, 2, 8, 57, 456 8 | 8
 ------------------------------------------------------
 SAVE(2) | 4 -1, 1, 2, 2, 8, 57, 456 | - 
 ------------------------------------------------------
-Cada elemento inserido na lista está compreendido no intervalo -2 x 109 ≤ x ≤ 2 x 109.
-5/6
-Dado que o número máximo de operações SAVE(x) e LOAD é elevado (60.000 operações
-de cada tipo), é necessário aplicar um algoritmo bastante eficiente para a “Caixa dos
-Números”.
-É garantido que a n-ésima operação LOAD só é efectuada quando já estiverem na lista
-pelo menos n elementos.
-O Input
-A primeira linha do Input indica o número de “caixas” a tratar, devendo cada “caixa” ser
-tratada de forma independente.
-Segue-se o input relativo a cada uma das caixas, separado do anterior por uma linha em
-branco.
-Para cada “caixa” o input inclui, na primeira linha, dois inteiros que representam,
-respectivamente, o número de elementos a incluir na caixa e o número de operações
-LOAD a efectuar. Seguem-se duas sequências de números: os elementos a inserir na
-caixa (primeira sequência) e os momentos nos quais são invocadas as operações LOAD
-(segunda sequência).
-O Output
-Para cada “caixa” deve ser indicado o valor de cada operação LOAD. Outputs gerados
-por “caixas” distintas deverão ser separados por um espaço em branco.
-Pegando no exemplo já mencionado (1ª caixa) e numa segunda caixa semelhante mas
-apenas com 3 operações LOAD, atente-se no seguinte exemplo de input/output:
-Pode ver de seguida alguns exemplos de entrada e saída do programa.
 
-#################################################
-------------------------------------------------------
+Cada elemento inserido na lista está compreendido no intervalo -2 x 109 ≤ x ≤ 2 x 109.
+
+Dado que o número máximo de operações SAVE(x) e LOAD é elevado (60.000 operações de cada tipo), é necessário aplicar um algoritmo bastante eficiente para a “Caixa dos Números”.
+É garantido que a n-ésima operação LOAD só é efectuada quando já estiverem na lista pelo menos n elementos.
+
+#### O Input
+A primeira linha do Input indica o número de “caixas” a tratar, devendo cada “caixa” ser tratada de forma independente.
+Segue-se o input relativo a cada uma das caixas, separado do anterior por uma linha em branco.
+Para cada “caixa” o input inclui, na primeira linha, dois inteiros que representam, respectivamente, o número de elementos a incluir na caixa e o número de operações LOAD a efectuar. Seguem-se duas sequências de números: os elementos a inserir na
+caixa (primeira sequência) e os momentos nos quais são invocadas as operações LOAD (segunda sequência).
+
+#### O Output
+Para cada “caixa” deve ser indicado o valor de cada operação LOAD. Outputs gerados por “caixas” distintas deverão ser separados por um espaço em branco. Pegando no exemplo já mencionado (1ª caixa) e numa segunda caixa semelhante mas apenas com 3 operações LOAD, atente-se no seguinte exemplo de input/output:
+
+
 ENTRADA
 ------------------------------------------------------
 2
-------------------------------------------------------
-------------------------------------------------------
 ------------------------------------------------------
 7 4
 ------------------------------------------------------
@@ -90,8 +72,8 @@ ENTRADA
 ------------------------------------------------------
 2 4 6
 ------------------------------------------------------
-------------------------------------------------------
-------------------------------------------------------
+
+
 SAÍDA
 ------------------------------------------------------
 1
@@ -102,8 +84,7 @@ SAÍDA
 ------------------------------------------------------
 8 
 ------------------------------------------------------
-------------------------------------------------------
-------------------------------------------------------
+
 1
 ------------------------------------------------------
 3
